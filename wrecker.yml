@@ -1,0 +1,14 @@
+#uzycie openJDK  bazujace na dokerze
+box: 
+  id: openjdk
+  ports:
+    -$PORT
+   
+#build using maven
+build:
+  steps:
+    -install-packages:
+      packages: maven 
+    -script:
+      name: maven build
+      code: mvn clean assembly:assembly
