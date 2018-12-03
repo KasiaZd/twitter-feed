@@ -2,13 +2,13 @@
 box: 
   id: openjdk
   ports:
-    -$PORT
+    - $PORT
    
 #build using maven
 build:
   steps:
-    -install-packages:
+    - install-packages:
       packages: maven 
-    -script:
+    - script:
       name: maven build
       code: mvn clean assembly:assembly
