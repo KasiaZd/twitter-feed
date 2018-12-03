@@ -1,6 +1,6 @@
 #uzycie openJDK  bazujace na dokerze
 box: 
-  id: openjdk
+  id: openjdk:8
   ports:
     - $PORT 
    
