@@ -2,8 +2,7 @@
 box: 
   id: openjdk
   ports:
-    - $PORT
-   
+    - $PORT 
    
 #build using maven
 build:
