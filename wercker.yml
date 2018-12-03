@@ -4,6 +4,7 @@ box:
   ports:
     - $PORT
    
+   
 #build using maven
 build:
   steps:
